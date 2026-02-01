@@ -4,7 +4,7 @@ public class ProductRecursionTwo {
 
         public static int recursiveProduct(int[] numbers, int position) {
         if (position == numbers.length) {
-            return 1; // Multiplicative identity
+            return 1; 
         }
         return numbers[position] * recursiveProduct(numbers, position + 1);
     }
@@ -32,4 +32,5 @@ public class ProductRecursionTwo {
         int result = recursiveProduct(userNumbers, 0);
         displayResult(result);
     }
+
 }
